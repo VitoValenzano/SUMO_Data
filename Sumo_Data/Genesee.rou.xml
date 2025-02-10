@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-
-<!-- generated on 2024-10-18 14:54:54 by Eclipse SUMO netedit Version 1.20.0
--->
-
-<routes xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/routes_file.xsd">
-    <!-- Vehicles, persons and containers (sorted by depart) -->
-    <flow id="0_0" begin="1.00" color="white" from="154" to="-144" end="3600.00" vehsPerHour="1800"/>
-</routes>
