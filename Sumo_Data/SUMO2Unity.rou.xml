@@ -18,38 +18,72 @@
     <route id="3" edges="20141660#1 -676653874#1 -676653874#0 676684114#0 -676684199#8 -676684199#7 -676684199#5 -676684199#4 -676684199#2 -676684199#1 -321082028#9 -321082028#8 -321082028#7 -321082028#6 -321082028#5 -321082028#4 -321082028#3 -321082028#2 -321082028#0 676653873#0"/>
     <route id="4" edges="90837101#0 -676653874#1 -676653874#0 676684114#0 -676684199#8 -676684199#7 -676684199#5 -676684199#4 -676684199#2 -676684199#1 -321082028#9 -321082028#8 -321082028#7 -321082028#6 -321082028#5 -321082028#4 -321082028#3 -321082028#2 -321082028#0 676653873#0"/>
  
-    <!-- Turning routes -->
-    <route id="5" edges="676653921#1 676684114#0 -676684199#8 -676684199#7 -676684199#5 -676684199#4 -676684199#2 -676684199#1 -321082028#9 -321082028#8 -321082028#7 -321082028#6 -321082028#5 -321082028#4 -321082028#3 -321082028#2 -321082028#0 676653873#0"/>
-    <route id="6" edges="676653921#1 676653874#1 676684108"/>
-    <route id="7" edges="-676653858#0 676684114#0 -676684199#8 -676684199#7 -676684199#5 -676684199#4 -676684199#2 -676684199#1 -321082028#9 -321082028#8 -321082028#7 -321082028#6 -321082028#5 -321082028#4 -321082028#3 -321082028#2 -321082028#0 676653873#0"/>
-    <route id="8" edges="-676653858#0 676653874#1 676684108"/>
-    <route id="9" edges="676653861#7 -676684199#8 -676684199#7 -676684199#5 -676684199#4 -676684199#2 -676684199#1 -321082028#9 -321082028#8 -321082028#7 -321082028#6 -321082028#5 -321082028#4 -321082028#3 -321082028#2 -321082028#0 676653873#0"/>
-    <route id="10" edges="676653861#7 -676684114#0 676653874#0 676653874#1 676684108"/>
+    <!-- Intersecting routes -->
+    <route id="5" edges="20137147#2 -20146573#2 -20146573#1 676684224#1 676684224#3 676684224#4 676684224#5 676684224#6 676684224#9 676684224#10 676684224#11"/>
+    <route id="6" edges="-676684224#11 -676684224#10 -676684224#9 -676684224#6 -676684224#5 -676684224#4 -676684224#3 -676684224#1 20146573#1 20146573#2 -20137147#2"/>
+    <route id="7" edges="676653860 676653861#1 676653861#3 676653861#4 676653861#5 676653861#6 676653861#7 676653919#1 676653919#2 20150770#0"/>
+    <route id="8" edges="-20150770#0 -676653919#2 -676653919#1 -676653861#7 -676653861#6 -676653861#5 -676653861#4 -676653861#3 -676653861#1 -676653860"/>
+    <route id="9" edges="910384602#3 676653910#1 -676653920 676653921#0 676653921#1 676653858#0 676653858#1 676653858#2 -1111965584#3"/>
+    <route id="10" edges="1111965584#3 -676653858#2 -676653858#1 -676653858#0 -676653921#1 -676653921#0 676653920 -676653910#1 -910384602#3"/>
+    <route id="11" edges="-1111965582#1 676684109#0 676684109#2 676684108 1111965592#0 1111965592#1 1212912177#0 676684112#0 676684112#1"/>
+    <route id="12" edges="-20140315#0 20141660#1 676684107#0 676684107#1 1111965582#1"/>
 
 
 <!-- TRIPS -->
     <!-- Player vehicle, do not delete -->
     <trip id="0" depart="0.00" from="321082028#6" to="321082028#6"/>
 
-    <flow id="car1" begin="0" end= "7200" vehsPerHour="300" type="car" route = "1"/>
-    <flow id="car2" begin="0" end= "7200" vehsPerHour="75" type="car_rage" route = "1"/>
+    <flow id="car1" begin="0" end= "7200" vehsPerHour="250" type="car" route = "1"/>
+    <flow id="car2" begin="0" end= "7200" vehsPerHour="50" type="car_rage" route = "1"/>
     <flow id="car3" begin="0" end= "7200" vehsPerHour="90" type="car" route = "2"/>
     <flow id="car4" begin="0" end= "7200" vehsPerHour="20" type="car_rage" route = "2"/>
     <flow id="car5" begin="0" end= "7200" vehsPerHour="90" type="car" route = "3"/>
     <flow id="car6" begin="0" end= "7200" vehsPerHour="20" type="car_rage" route = "3"/>
     <flow id="car7" begin="0" end= "7200" vehsPerHour="90" type="car" route = "4"/>
     <flow id="car8" begin="0" end= "7200" vehsPerHour="20" type="car_rage" route = "4"/>
+    <flow id="car9" begin="0" end= "7200" vehsPerHour="45" type="car" route = "5"/>
+    <flow id="car10" begin="0" end= "7200" vehsPerHour="10" type="car_rage" route = "5"/>
+    <flow id="car11" begin="0" end= "7200" vehsPerHour="45" type="car" route = "6"/>
+    <flow id="car12" begin="0" end= "7200" vehsPerHour="10" type="car_rage" route = "6"/>
+    <flow id="car13" begin="0" end= "7200" vehsPerHour="45" type="car" route = "7"/>
+    <flow id="car14" begin="0" end= "7200" vehsPerHour="10" type="car_rage" route = "7"/>
+    <flow id="car15" begin="0" end= "7200" vehsPerHour="45" type="car" route = "8"/>
+    <flow id="car16" begin="0" end= "7200" vehsPerHour="10" type="car_rage" route = "8"/>
+    <flow id="car17" begin="0" end= "7200" vehsPerHour="45" type="car" route = "9"/>
+    <flow id="car18" begin="0" end= "7200" vehsPerHour="10" type="car_rage" route = "9"/>
+    <flow id="car19" begin="0" end= "7200" vehsPerHour="45" type="car" route = "10"/>
+    <flow id="car20" begin="0" end= "7200" vehsPerHour="10" type="car_rage" route = "10"/>
+    <flow id="car21" begin="0" end= "7200" vehsPerHour="45" type="car" route = "11"/>
+    <flow id="car22" begin="0" end= "7200" vehsPerHour="10" type="car_rage" route = "11"/>
+    <flow id="car23" begin="0" end= "7200" vehsPerHour="45" type="car" route = "12"/>
+    <flow id="car24" begin="0" end= "7200" vehsPerHour="10" type="car_rage" route = "12"/>
 
-    <flow id="truck1" begin="0" end= "7200" vehsPerHour="75" type="truck" route = "1"/>
-    <flow id="truck2" begin="0" end= "7200" vehsPerHour="15" type="truck_rage" route = "1"/>
+    <flow id="truck1" begin="0" end= "7200" vehsPerHour="50" type="truck" route = "1"/>
+    <flow id="truck2" begin="0" end= "7200" vehsPerHour="20" type="truck_rage" route = "1"/>
     <flow id="truck3" begin="0" end= "7200" vehsPerHour="25" type="truck" route = "2"/>
     <flow id="truck4" begin="0" end= "7200" vehsPerHour="15" type="truck_rage" route = "2"/>
     <flow id="truck5" begin="0" end= "7200" vehsPerHour="25" type="truck" route = "3"/>
     <flow id="truck6" begin="0" end= "7200" vehsPerHour="15" type="truck_rage" route = "3"/>
     <flow id="truck7" begin="0" end= "7200" vehsPerHour="25" type="truck" route = "4"/>
     <flow id="truck8" begin="0" end= "7200" vehsPerHour="15" type="truck_rage" route = "4"/>
+    <flow id="truck9" begin="0" end= "7200" vehsPerHour="15" type="truck" route = "5"/>
+    <flow id="truck10" begin="0" end= "7200" vehsPerHour="10" type="truck_rage" route = "5"/>
+    <flow id="truck11" begin="0" end= "7200" vehsPerHour="15" type="truck" route = "6"/>
+    <flow id="truck12" begin="0" end= "7200" vehsPerHour="10" type="truck_rage" route = "6"/>
+    <flow id="truck13" begin="0" end= "7200" vehsPerHour="15" type="truck" route = "7"/>
+    <flow id="truck14" begin="0" end= "7200" vehsPerHour="10" type="truck_rage" route = "7"/>
+    <flow id="truck15" begin="0" end= "7200" vehsPerHour="15" type="truck" route = "8"/>
+    <flow id="truck16" begin="0" end= "7200" vehsPerHour="10" type="truck_rage" route = "8"/>
+    <flow id="truck17" begin="0" end= "7200" vehsPerHour="12" type="truck" route = "9"/>
+    <flow id="truck18" begin="0" end= "7200" vehsPerHour="10" type="truck_rage" route = "9"/>
+    <flow id="truck19" begin="0" end= "7200" vehsPerHour="15" type="truck" route = "10"/>
+    <flow id="truck20" begin="0" end= "7200" vehsPerHour="10" type="truck_rage" route = "10"/>
+    <flow id="truck21" begin="0" end= "7200" vehsPerHour="15" type="truck" route = "11"/>
+    <flow id="truck22" begin="0" end= "7200" vehsPerHour="10" type="truck_rage" route = "11"/>
+    <flow id="truck23" begin="0" end= "7200" vehsPerHour="15" type="truck" route = "12"/>
+    <flow id="truck24" begin="0" end= "7200" vehsPerHour="10" type="truck_rage" route = "12"/>
 
-    <flow id="bus1" begin="0" end= "7200" vehsPerHour="30" type="bus" route = "1"/>
+    <flow id="bus1" begin="0" end= "7200" vehsPerHour="20" type="bus" route = "1"/>
     <flow id="bus2" begin="0" end= "7200" vehsPerHour="30" type="bus" route = "4"/>
 
 </routes>
