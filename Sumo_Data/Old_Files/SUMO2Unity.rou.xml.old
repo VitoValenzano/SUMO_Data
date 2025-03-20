@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<routes xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/routes_file.xsd">
+
+<!-- Vehicle types -->
+    <vType id="car" accel="2.5" decel="4.5" maxSpeed="50" sigma="0.4" length="5" color="1,0,0"/>
+    <vType id="car_rage" accel="2.5" decel="5.5" maxSpeed="80" sigma="1" length="5" color="1,0,0"/>
+    <vType id="truck" accel="1.0" decel="3.0" maxSpeed="40" sigma="0.5" length="6" color="0,0,1" minGap="5.0"/>
+    <vType id="truck_rage" accel="1.3" decel="3.75" maxSpeed="70" sigma="1" length="6" color="0,0,1" minGap="5.0"/>
+    <vType id="bus" accel="0.5" decel="1.5" maxSpeed="30.0" length="12.0" width="2.5" minGap="3.0" sigma="0.5" color="0,1,0" emissionClass="HBEFA3/Bus"/>
+
+<!-- ROUTES -->
+    <!-- North straight -->
+    <route id="1" edges="321082028#0 321082028#2 321082028#3 321082028#4 321082028#5 321082028#6 321082028#7 321082028#8 321082028#9 676684199#1 676684199#2 676684199#4 676684199#5 676684199#7 676684199#8 -676684114#0 676653874#0 676653874#1 676684108"/>
+    <!-- South straight(Different entrances) -->
+    <route id="2" edges="676684109#2 -676653874#1 -676653874#0 676684114#0 -676684199#8 -676684199#7 -676684199#5 -676684199#4 -676684199#2 -676684199#1 -321082028#9 -321082028#8 -321082028#7 -321082028#6 -321082028#5 -321082028#4 -321082028#3 -321082028#2 -321082028#0 676653873#0"/>
+    <route id="3" edges="20141660#1 -676653874#1 -676653874#0 676684114#0 -676684199#8 -676684199#7 -676684199#5 -676684199#4 -676684199#2 -676684199#1 -321082028#9 -321082028#8 -321082028#7 -321082028#6 -321082028#5 -321082028#4 -321082028#3 -321082028#2 -321082028#0 676653873#0"/>
+    <route id="4" edges="90837101#0 -676653874#1 -676653874#0 676684114#0 -676684199#8 -676684199#7 -676684199#5 -676684199#4 -676684199#2 -676684199#1 -321082028#9 -321082028#8 -321082028#7 -321082028#6 -321082028#5 -321082028#4 -321082028#3 -321082028#2 -321082028#0 676653873#0"/>
+ 
+    <!-- Turning routes -->
+    <route id="5" edges="676653921#1 676684114#0 -676684199#8 -676684199#7 -676684199#5 -676684199#4 -676684199#2 -676684199#1 -321082028#9 -321082028#8 -321082028#7 -321082028#6 -321082028#5 -321082028#4 -321082028#3 -321082028#2 -321082028#0 676653873#0"/>
+    <route id="6" edges="676653921#1 676653874#1 676684108"/>
+    <route id="7" edges="-676653858#0 676684114#0 -676684199#8 -676684199#7 -676684199#5 -676684199#4 -676684199#2 -676684199#1 -321082028#9 -321082028#8 -321082028#7 -321082028#6 -321082028#5 -321082028#4 -321082028#3 -321082028#2 -321082028#0 676653873#0"/>
+    <route id="8" edges="-676653858#0 676653874#1 676684108"/>
+    <route id="9" edges="676653861#7 -676684199#8 -676684199#7 -676684199#5 -676684199#4 -676684199#2 -676684199#1 -321082028#9 -321082028#8 -321082028#7 -321082028#6 -321082028#5 -321082028#4 -321082028#3 -321082028#2 -321082028#0 676653873#0"/>
+    <route id="10" edges="676653861#7 -676684114#0 676653874#0 676653874#1 676684108"/>
+
+
+<!-- TRIPS -->
+    <!-- Player vehicle, do not delete -->
+    <trip id="0" depart="0.00" from="321082028#6" to="321082028#6"/>
+
+    <flow id="car1" begin="0" end= "7200" vehsPerHour="300" type="car" route = "1"/>
+    <flow id="car2" begin="0" end= "7200" vehsPerHour="75" type="car_rage" route = "1"/>
+    <flow id="car3" begin="0" end= "7200" vehsPerHour="90" type="car" route = "2"/>
+    <flow id="car4" begin="0" end= "7200" vehsPerHour="20" type="car_rage" route = "2"/>
+    <flow id="car5" begin="0" end= "7200" vehsPerHour="90" type="car" route = "3"/>
+    <flow id="car6" begin="0" end= "7200" vehsPerHour="20" type="car_rage" route = "3"/>
+    <flow id="car7" begin="0" end= "7200" vehsPerHour="90" type="car" route = "4"/>
+    <flow id="car8" begin="0" end= "7200" vehsPerHour="20" type="car_rage" route = "4"/>
+
+    <flow id="truck1" begin="0" end= "7200" vehsPerHour="75" type="truck" route = "1"/>
+    <flow id="truck2" begin="0" end= "7200" vehsPerHour="15" type="truck_rage" route = "1"/>
+    <flow id="truck3" begin="0" end= "7200" vehsPerHour="25" type="truck" route = "2"/>
+    <flow id="truck4" begin="0" end= "7200" vehsPerHour="15" type="truck_rage" route = "2"/>
+    <flow id="truck5" begin="0" end= "7200" vehsPerHour="25" type="truck" route = "3"/>
+    <flow id="truck6" begin="0" end= "7200" vehsPerHour="15" type="truck_rage" route = "3"/>
+    <flow id="truck7" begin="0" end= "7200" vehsPerHour="25" type="truck" route = "4"/>
+    <flow id="truck8" begin="0" end= "7200" vehsPerHour="15" type="truck_rage" route = "4"/>
+
+    <flow id="bus1" begin="0" end= "7200" vehsPerHour="30" type="bus" route = "1"/>
+    <flow id="bus2" begin="0" end= "7200" vehsPerHour="30" type="bus" route = "4"/>
+
+</routes>
