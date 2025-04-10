@@ -33,6 +33,24 @@
     <!-- Player vehicle, do not delete -->
     <trip id="0" depart="0.00" from="321082028#6" to="321082028#6"/>
 
+    <!-- Some trips to make sure roads are populated while flow cars arrive -->
+    <trip id="1" depart="0.00" from="321082028#7" to="676684108"/>
+    <trip id="2" depart="0.00" from="321082028#8" to="676684108"/>
+    <trip id="3" depart="0.00" from="676684199#1" to="676684108"/>
+    <trip id="4" depart="0.00" from="676684199#2" to="676684108"/>
+    <trip id="5" depart="0.00" from="321082028#5" to="676684108"/>
+    <trip id="6" depart="0.00" from="321082028#4" to="676684108"/>
+    <trip id="7" depart="0.00" from="321082028#3" to="676684108"/>
+
+    <trip id="8" depart="0.00" from="-321082028#8" to="-321082028#0"/>
+    <trip id="9" depart="0.00" from="-676684199#1" to="-321082028#0"/>
+    <trip id="10" depart="0.00" from="-676684199#2" to="-321082028#0"/>
+    <trip id="11" depart="0.00" from="-676684199#4" to="-321082028#0"/>
+    <trip id="12" depart="0.00" from="-676684199#7" to="-321082028#0"/>
+    <trip id="13" depart="0.00" from="-676684199#8" to="-321082028#0"/>
+    <trip id="14" depart="0.00" from="676684114#0" to="-321082028#0"/>
+
+    <!-- Normal flows -->
     <flow id="car1" begin="0" end= "7200" vehsPerHour="250" type="car" route = "1"/>
     <flow id="car2" begin="0" end= "7200" vehsPerHour="50" type="car_rage" route = "1"/>
     <flow id="car3" begin="0" end= "7200" vehsPerHour="90" type="car" route = "2"/>
